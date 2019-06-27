@@ -1,0 +1,75 @@
+html {
+    object-fit: contain;
+    background-image: url('/assets/pano2.jpg');
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: back-and-forth 150s infinite;
+  }
+  
+
+  @keyframes back-and-forth {
+    0% {background-position: right;}
+    50% {background-position: left;}
+    100% {background-position: right;}
+  }
+
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+.displayContainer {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.centerPseudo {
+    display: inline-block;
+    text-align: center;
+}
+.centerPseudo::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+.objBox:hover {
+    background: rgba(54, 57, 63, 0.1);
+}
+
+.boxFlex {
+    display: flex;
+    text-align: center; 
+}
+.discord {
+    flex: 1;
+    padding: 1em;
+}
+.reddit {
+    flex: 2;
+    padding: 1em;
+}
+.head-txt {
+    color: 	#1D1F21;
+    font-size: 2em;
+}
+.head-txt:hover {
+    color: 	#212223;
+    font-size: 2em;
+}
+.desc-text {
+    display: block;
+    font-size: 2em;
+}
+
+a.objLink {
+    color: black;
+    text-decoration: none;
+}
+
+a.objLink:active, a.objLink:hover{
+    color: white;
+}
